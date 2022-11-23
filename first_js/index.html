@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Learn Java Script</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="CSS/main.css" />
+  </head>
+  <body>
+    <div></div>
+    
+    <div class="add-task-con" >
+
+    <form  style="padding :10px; margin: 10px; background-color: rgb(146, 102, 102); display: flex; justify-content: space-between;"  >
+      <!-- <input type="number"  name='task-id' placeholder="Add the task id" /> -->
+      <input type="text"  name='task-name' placeholder="Add the task name"  style="width:70%; border-radius: 10px; border: none; padding: 10px;"/>
+      <button id="btn-submit-task"  type="submit"  value="Add Task">Add Task</button>
+    </form>
+    <ul class="tasks" style="padding :20px; margin: 10px; background-color: rgb(172, 106, 106);  display: flex; justify-content: space-between; flex-wrap: wrap;" ></div>
+    </ul>
+  
+    
+
+    <button class="btn-scroll">Up</button>
+    <h1>The Window Object</h1>
+    <h2>The setTimeout() and clearTimeout() Methods</h2>
+    
+    <button onclick="startCount()">Start count!</button>
+    <input type="text" id="demo">
+    <button onclick="stopCount()">Stop count!</button>
+    
+    <p>Click on "Start count!" to start the timer. The input field will count forever, starting at 0.</p>
+    
+    <p>Click on "Stop count!" to stop counting. Click on "Start count!" to start the timer again.</p>
+    
+    
+
+       <div id="Osama"> <!-- Osama -->Hello Div<p>Hello P</p><span>Hello Span</span><!-- Comment -->Hello</div>
+  
+    <ul>
+      <li class="active">One</li>
+      <li>Two</li>
+      <li>Three</li>
+    </ul>
+    <div class="content">
+      <div>Div One</div>
+      <div>Div Two</div>
+      <div>Div Three</div>
+    </div>
+    <div id="my-div" class="js one two show test">
+      <!-- comment -->
+      <span class="one">One</span>
+      <!-- comment -->
+      <span class="two">Two</span>
+      <!-- comment -->
+      <span class="three">Three</span>
+      Java script <span>Div</span> &lt; span &gt;
+    </div>
+    <div id="my-divs" >
+      <!-- comment -->
+      <span class="one">One</span>
+      <!-- comment -->
+      <span class="two">Two</span>
+      <!-- comment -->
+      <span class="three">Three</span>
+    </div>
+    <img src="" alt="" />
+    <a href="#" class="link">google</a>
+
+    <form  >
+      <input type="text"  name='username' placeholder="maxmum Letter 10" />
+      <input type="number"  name='userage' placeholder="age"/>
+      <button id="btn-submit" type="submit" value="Submit">Submit</button>
+    </form>
+    <a href="http://www.facebook.com" target="_blank"> google</a>
+    <hr>
+    <a href="http://www.facebook.com" target="_blank"> facebook </a>
+    <a href="http://www.facebook.com" target="_blank"> facebook </a>
+
+    <button id="click">click</button>
+    <button id="cl">click</button>
+    <button id="show">show</button>
+    <button id="btn">Event</button>
+
+    <form id="register" action="" method="get">
+      <input type="text" id="phone" name="the-phone" maxlength="15" />
+      <input type="submit" value="Register" />
+    </form>
+    <div>
+      <ul class="color-ul">
+        <li class="active" data-color="red"></li>
+        <li data-color="green"></li>
+        <li data-color="blue"></li>
+        <li data-color="black"></li>
+      </ul>
+      <div class="experiment"></div>
+    </div>
+
+  
+
+      
+    <h2>The window.print() Method</h2>
+
+    <p>Click the button to print the current page.</p>
+
+    <button onclick="window.print()">Print this page</button> -->
+    <script>
+      let counter = 0;
+      let timeout;
+      let timer_on = 0;
+      
+      function timedCount() {
+        document.getElementById("demo").value = counter;
+        counter++;
+        timeout = setTimeout(timedCount, 1000);
+      }
+      
+      function startCount() {
+        if (!timer_on) {
+          timer_on = 1;
+          timedCount();
+        }
+      }
+      
+      function stopCount() {
+        clearTimeout(timeout);
+        timer_on = 0;
+      }
+      </script>
+
+
+
+    
+<script ></script>
+<script src="JS/main.js" type="module" ></script>
+<script src="JS/app.js" type="module"></script>
+
+  </body>
+</html>

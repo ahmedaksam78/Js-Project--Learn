@@ -1,0 +1,70 @@
+#my-div{
+    background-color: aqua;
+    font-size: 30px;
+}
+.btn-scroll{
+background-color: red;
+border: none;
+color: azure;
+padding: 10px;
+border-radius: 5px;
+position: fixed;
+bottom: 20px;
+right: 20px;
+display: none;
+
+}
+#btn-submit-task{
+  
+background-color: red;
+border: none;
+color: azure;
+padding: 10px;
+border-radius: 5px;
+
+}
+.color-ul {
+    padding: 0;
+    margin: 0;
+    background-color: #ddd;
+    margin: 20px auto;
+    padding: 20px;
+    width: 400px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  .color-ul li {
+    width: 60px;
+    height: 60px;
+    border: 2px solid transparent;
+    opacity: 0.4;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .color-ul li.active,
+  .color-ul li:hover {
+    opacity: 1;
+  }
+  .color-ul li:first-child {
+    background-color: red;
+    border-radius: 20px;
+  }
+  .color-ul li:nth-child(2) {
+    background-color: green;
+    border-radius: 20px;
+  }
+  .color-ul li:nth-child(3) {
+    background-color: blue;
+    border-radius: 20px;
+  }
+  .color-ul li:nth-child(4) {
+    background-color: black;
+    border-radius: 20px;
+  }
+  .experiment {
+    background-color: red;
+    width: 600px;
+    height: 300px;
+    margin: 20px auto;
+  }
